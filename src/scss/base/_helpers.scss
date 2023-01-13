@@ -1,0 +1,27 @@
+// Hide element while making it readable for screen readers
+.sr-only {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+// Social media icons
+.icon {
+  &-facebook::before {
+    content: '\ea90';
+  }
+
+  &-instagram::before {
+    content: '\ea92';
+  }
+
+  &-twitter::before {
+    content: '\ea96';
+  }
+}

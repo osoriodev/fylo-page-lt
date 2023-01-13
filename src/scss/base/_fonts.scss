@@ -1,0 +1,31 @@
+// Raleway Family
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/assets/fonts/raleway-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/src/assets/fonts/raleway-700.woff2') format('woff2');
+}
+
+// Open Sans Family
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/src/assets/fonts/open-sans-400.woff2') format('woff2');
+}
+
+// Social Media Family
+@font-face {
+  font-family: 'social-media';
+  font-style: normal;
+  font-weight: normal;
+  font-display: block;
+  src: url('/src/assets/fonts/social-media.woff') format('woff');
+}

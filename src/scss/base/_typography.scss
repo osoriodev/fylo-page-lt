@@ -1,0 +1,20 @@
+body {
+  font-family: var(--ff-base);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-alt);
+  font-weight: 700;
+  color: var(--clr-main);
+}
+
+i {
+  font-family: var(--ff-icon) !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+}
