@@ -1,0 +1,52 @@
+@use '../utils' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: rem(24);
+
+  @include respond-to('md') {
+    padding: rem(32) rem(80);
+  }
+
+  @include respond-to('xl') {
+    padding-block: rem(65);
+  }
+
+  &__logo {
+    width: rem(80);
+
+    @include respond-to('md') {
+      width: rem(120);
+    }
+
+    @include respond-to('xl') {
+      width: rem(166);
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: rem(16);
+
+    @include respond-to('md') {
+      gap: rem(57);
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: rem(14);
+    color: var(--clr-main);
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @include respond-to('md') {
+      font-size: rem(16);
+    }
+  }
+}
