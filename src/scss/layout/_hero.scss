@@ -1,0 +1,128 @@
+@use '../utils' as *;
+
+.hero {
+  width: 100%;
+  padding: rem(22) rem(36) rem(200);
+  text-align: center;
+  background-image: url('/src/assets/img/bg-curve-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: left bottom;
+
+  @include respond-to('md') {
+    padding-inline: rem(80);
+    background-image: url('/src/assets/img/bg-curve-desktop.svg');
+  }
+
+  @include respond-to('lg') {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  @include respond-to('xl') {
+    padding-bottom: rem(277);
+  }
+
+  &__fig {
+    max-width: rem(532);
+    margin: 0 auto rem(44);
+
+    @include respond-to('lg') {
+      margin: 0;
+    }
+
+    @include respond-to('xl') {
+      max-width: rem(640);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-to('lg') {
+      align-items: start;
+    }
+
+    @include respond-to('xl') {
+      padding-bottom: rem(44);
+    }
+  }
+
+  &__title {
+    max-width: 25ch;
+    margin-bottom: rem(16);
+
+    @include respond-to('md') {
+      font-size: rem(32);
+    }
+
+    @include respond-to('xl') {
+      font-size: rem(40);
+    }
+  }
+
+  &__desc {
+    max-width: 58ch;
+    margin-bottom: rem(24);
+    font-size: rem(14);
+
+    @include respond-to('md') {
+      font-size: rem(16);
+    }
+
+    @include respond-to('xl') {
+      font-size: rem(18);
+      line-height: 1.34;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
+    width: 100%;
+    max-width: rem(464);
+
+    @include respond-to('md') {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    @include respond-to('xl') {
+      max-width: rem(536);
+    }
+  }
+
+  &__field {
+    width: 100%;
+    padding: rem(8) rem(20);
+    border: 1px solid var(--clr-main-lt);
+    border-radius: 4px;
+    font-size: rem(14);
+    line-height: rem(20);
+    color: inherit;
+
+    @include respond-to('xl') {
+      padding: rem(12) rem(20);
+    }
+  }
+
+  &__cta {
+    padding: rem(12) rem(32);
+    border-radius: 4px;
+    font-size: rem(14);
+    line-height: 1;
+    color: var(--clr-ntrl);
+    background-color: var(--clr-blue);
+    flex-shrink: 0;
+
+    @include respond-to('xl') {
+      padding: rem(16) rem(62);
+    }
+  }
+}
