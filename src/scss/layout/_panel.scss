@@ -1,0 +1,84 @@
+@use '../utils' as *;
+
+.panel {
+  width: 100%;
+  padding: rem(58) rem(24) rem(106);
+  background-color: #F8F8FE;
+
+  @include respond-to('lg') {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: rem(80);
+  }
+
+  &__fig {
+    max-width: rem(532);
+    margin: 0 auto rem(80);
+
+    @include respond-to('lg') {
+      margin: 0;
+    }
+
+    @include respond-to('xl') {
+      max-width: rem(542);
+      padding-bottom: rem(36);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(16);
+
+    @include respond-to('lg') {
+      align-items: start;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(14);
+    font-size: rem(18);
+
+    @include respond-to('md') {
+      font-size: rem(24);
+    }
+
+    @include respond-to('xl') {
+      font-size: rem(40);
+      letter-spacing: 0.25px;
+    }
+  }
+
+  &__desc {
+    max-width: 58ch;
+    font-size: rem(14);
+
+    @include respond-to('md') {
+      font-size: rem(16);
+    }
+  }
+
+  &__link {
+    padding-bottom: rem(2);
+    margin-bottom: rem(28);
+    border-bottom: 1px solid currentColor;
+    font-size: rem(14);
+    color: var(--clr-green);
+
+    @include respond-to('md') {
+      font-size: rem(16);
+    }
+
+    i {
+      display: inline-block;
+      width: rem(18);
+      height: rem(18);
+      vertical-align: text-bottom;
+      background-image: url('/src/assets/icons/icon-arrow.svg');
+      background-size: cover;
+    }
+  }
+}
