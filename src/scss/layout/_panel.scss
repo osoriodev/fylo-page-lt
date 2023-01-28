@@ -40,37 +40,21 @@
 
   &__title {
     margin-bottom: rem(14);
-    font-size: rem(18);
-
-    @include respond-to('md') {
-      font-size: rem(24);
-    }
 
     @include respond-to('xl') {
-      font-size: rem(40);
       letter-spacing: 0.25px;
     }
   }
 
   &__desc {
     max-width: 58ch;
-    font-size: rem(14);
-
-    @include respond-to('md') {
-      font-size: rem(16);
-    }
   }
 
   &__link {
     padding-bottom: rem(2);
     margin-bottom: rem(28);
-    border-bottom: 1px solid currentColor;
-    font-size: rem(14);
+    border-bottom: 1px solid;
     color: var(--clr-green);
-
-    @include respond-to('md') {
-      font-size: rem(16);
-    }
 
     i {
       display: inline-block;

@@ -56,24 +56,11 @@
   &__title {
     max-width: 25ch;
     margin-bottom: rem(16);
-
-    @include respond-to('md') {
-      font-size: rem(32);
-    }
-
-    @include respond-to('xl') {
-      font-size: rem(40);
-    }
   }
 
   &__desc {
     max-width: 58ch;
     margin-bottom: rem(24);
-    font-size: rem(14);
-
-    @include respond-to('md') {
-      font-size: rem(16);
-    }
 
     @include respond-to('xl') {
       font-size: rem(18);

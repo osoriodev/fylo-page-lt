@@ -10,6 +10,11 @@
     padding-inline: rem(80);
   }
 
+  p,
+  a {
+    font-size: rem(16);
+  }
+
   &__logo {
     width: rem(176);
     margin-bottom: rem(26);

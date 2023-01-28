@@ -20,11 +20,6 @@
 
   &__title {
     margin-bottom: rem(16);
-    font-size: rem(18);
-
-    @include respond-to('md') {
-      font-size: rem(24);
-    }
 
     @include respond-to('xl') {
       font-size: rem(32);
@@ -33,12 +28,7 @@
 
   &__desc {
     max-width: 58ch;
-    font-size: rem(14);
     letter-spacing: 0.5px;
-
-    @include respond-to('md') {
-      font-size: rem(16);
-    }
   }
 
   &__form {

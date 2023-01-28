@@ -1,13 +1,49 @@
+@use '../utils' as *;
+
 body {
   font-family: var(--ff-base);
+  color: var(--clr-main);
 }
 
 h1,
 h2,
-h3 {
+h3,
+button {
   font-family: var(--ff-alt);
   font-weight: 700;
-  color: var(--clr-main);
+}
+
+h1 {
+  font-size: rem(24);
+
+  @include respond-to('md') {
+    font-size: rem(32);
+  }
+
+  @include respond-to('xl') {
+    font-size: rem(40);
+  }
+}
+
+h2 {
+  font-size: rem(18);
+
+  @include respond-to('md') {
+    font-size: rem(24);
+  }
+
+  @include respond-to('xl') {
+    font-size: rem(40);
+  }
+}
+
+p,
+a {
+  font-size: rem(14);
+
+  @include respond-to('md') {
+    font-size: rem(16);
+  }
 }
 
 i {
