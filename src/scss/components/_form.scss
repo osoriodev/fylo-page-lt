@@ -1,0 +1,64 @@
+@use '../utils' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16);
+  width: 100%;
+  font-size: rem(14);
+
+  &--one {
+    max-width: rem(536);
+
+    @include respond-to('md') {
+      flex-direction: row;
+    }
+  }
+
+  &--two {
+    max-width: rem(480);
+
+    @include respond-to('xl') {
+      margin-right: rem(40);
+    }
+  }
+
+  &__field {
+    width: 100%;
+    border-radius: 4px;
+    line-height: rem(20);
+    color: var(--clr-main);
+
+    &--one {
+      padding: rem(12) rem(20);
+      border: 1px solid var(--clr-main-lt);
+    }
+
+    &--two {
+      padding: rem(14) rem(20);
+      border: none;
+    }
+  }
+
+  &__cta {
+    border-radius: 4px;
+    line-height: 1;
+    color: var(--clr-ntrl);
+    background-color: var(--clr-blue);
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: lighten(#3065F8, 8%);
+    }
+
+    &--one {
+      padding: rem(16) rem(62);
+      flex-shrink: 0;
+    }
+
+    &--two {
+      padding: rem(17) rem(32);
+      align-self: start;
+    }
+  }
+}
