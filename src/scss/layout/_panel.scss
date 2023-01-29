@@ -6,10 +6,7 @@
   background-color: #F8F8FE;
 
   @include respond-to('lg') {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-h;
     padding-inline: rem(80);
   }
 
@@ -28,14 +25,7 @@
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: rem(16);
-
-    @include respond-to('lg') {
-      align-items: start;
-    }
+    @include flex-v;
   }
 
   &__title {
@@ -44,10 +34,6 @@
     @include respond-to('xl') {
       letter-spacing: 0.25px;
     }
-  }
-
-  &__desc {
-    max-width: 58ch;
   }
 
   &__link {

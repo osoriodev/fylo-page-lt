@@ -46,6 +46,10 @@ a {
   }
 }
 
+p {
+  max-width: 58ch;
+}
+
 i {
   font-family: var(--ff-icon) !important;
   font-style: normal;
